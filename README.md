@@ -1,6 +1,6 @@
 # Portfolio Website
 
-This is the code repository for my personal portfolio website. It showcases my work as a web developer, including various projects and skills.
+This is the code repository for my personal portfolio website. It showcases my projects and skills as a web developer.
 
 ## Overview
 
