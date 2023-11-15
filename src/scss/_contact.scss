@@ -1,0 +1,40 @@
+@use 'variables';
+
+#contact{
+  .contact-info {
+    color: variables.$gray-600;
+    font-size: 1.25rem;
+    padding-right: 5rem;
+    padding-top: 5rem;
+    text-align: justify;
+     
+    a {
+      color: variables.$gray-600;
+    }
+  }
+  .contact-form {
+    padding: 5rem 3rem;
+    box-shadow: -4px 4px 6px 0 rgba(0, 0, 0, 0.3);
+    background-color: var(--ibms-primary-color-lighter); 
+    input, textarea{
+      background-color: rgba(255, 255, 255, 0.55);
+      color: rgb(33, 37, 41)
+    }
+    textarea {
+      resize: none;
+    }
+  }
+  .contact-link, a{
+    color: var(--ibms-primary-text);
+    
+
+    svg {
+      fill: var(--ibms-primary-text);
+      width: 1.25rem;
+      height: auto;
+      vertical-align: baseline;
+      
+      
+    }
+  }
+}

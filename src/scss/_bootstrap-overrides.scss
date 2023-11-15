@@ -1,0 +1,22 @@
+@use 'variables';
+.bg-primary {
+  background-color: var(--ibms-primary-color) !important;
+}
+
+.text-primary {
+  color: var(--ibms-primary-color) !important;
+}
+
+// a {
+//   color: var(--ibms-primary-color);
+//   &:hover,
+//   &:focus,
+//   &:active {
+//     color: var(--ibms-primary-color-dark);
+//   }
+// }
+
+.btn-primary {
+  text-transform: uppercase !important;
+  color: rgba(255, 255, 255, 0.55) !important;
+}

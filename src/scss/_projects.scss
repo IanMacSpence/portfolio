@@ -1,0 +1,105 @@
+
+@use 'variables';
+#projects{
+  .project-item {
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+
+    .project-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: .375rem .375rem 0 0;
+    }
+
+    .project-body {
+      p {
+        font-size: .75rem;
+        margin-bottom: 1rem;
+        color: variables.$gray-600;
+      }
+
+      .project-skills-container {
+        margin-bottom: 1rem;
+
+        img {
+          width: 2.25rem;
+          margin: 0 .25rem;
+        }
+      }
+
+      .actions {
+        list-style: none;
+        padding: 0;
+      }
+      
+      .actions li {
+        display: inline-block;
+        margin-right: 1rem;
+      }   
+    }
+  }  
+}
+
+@media (min-width: 768px) { 
+  #projects{
+    .project-item {
+
+      .project-image {
+        border-radius: .375rem 0 0 .375rem;
+        border-right: 1px solid #eaeaea;
+      }
+
+      .project-body {
+        
+        h5 {
+          font-size: 1.5rem;
+        }
+        
+        p {
+          font-size: 0.875rem;
+          margin-bottom: 1rem;
+        }
+        
+        .actions {
+          margin-bottom: 0;
+        }
+      }
+    }  
+  } 
+}
+
+
+
+//HOVER EFFECTS
+
+//Scale
+
+// .project-item:hover {
+//   transform: scale(1.05);
+//   transition: transform 0.3s ease-in-out;
+// }
+
+//Shadow effect
+// maybe need to center the content for this to look better and radius border
+
+// .project-item:hover {
+//   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+//   transition: box-shadow 0.3s ease-in-out;
+// }
+
+//Opacity
+// .project-item img:hover {
+//   opacity: 0.7;
+//   transition: opacity 0.3s ease;
+// }
+
+// Tech pop
+// .project-skills-container img:hover {
+//   transform: translateY(-5px) rotate(-5deg);
+//   transition: transform 0.3s ease;
+// }
+
+// TODO more details link for each project? need to rewatch youtube video about this. This can be useful to touch on the skills I touched on in the project
+// FIXME fix whitespace under project image for 992px-1023px. This happens because body content has more height than the project image, so centering the project image vertically will make it look better, or giving the project image more columns could be a quick fix. Another approach is to use a smaller p text size for this screenwidth
+//TODO you need to make the max width on bigger screens match the about section
+// TODO make a carousel for projects on smaller screens

@@ -1,0 +1,17 @@
+
+.dropdown-menu{
+  padding: 0;
+  .dropdown-item {
+    color: var(--ibms-primary-text);
+    background: var(--ibms-primary-color);
+    &:hover{
+      color: var(--ibms-primary-text);
+      background: var(--ibms-primary-color-dark);
+    }
+    &:active{
+      color: var(--ibms-primary-text);
+      background: var(--ibms-primary-color-darker);
+    }
+  }
+}
+

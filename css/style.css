@@ -1,0 +1,65 @@
+/* SIDEBAR/NAVBAR */
+
+/* ABOUT */
+
+/* SKILLS */
+#skills {
+  padding: 50px;
+}
+
+#skills h1 {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 750px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.top-skills-container,
+.bottom-skills-container {
+  display: flex;
+  justify-content: center;
+  max-width: 750px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.skill-item:nth-child(odd) {
+  margin-top: -75px;
+}
+.skill-item:nth-child(even) {
+  margin-top: 75px;
+}
+
+.skill-item {
+  margin: 5px 1% 75px;
+  text-align: center;
+  width: calc(20% - 2%);
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-item img {
+  width: 100%;
+  max-width: 100px;
+}
+
+/* PROJECTS */
+#projects p {
+  margin-bottom: 1em;
+}
+
+.project-skills-container {
+  margin-bottom: 1em;
+}
+
+/* CONTACT */

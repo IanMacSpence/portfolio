@@ -1,0 +1,86 @@
+@use 'variables';
+
+#sideNav {
+  text-transform: uppercase;
+  color: var(--ibms-primary-text);
+  a {
+    color: var(--ibms-primary-text);
+  }
+
+  .navbar-brand {
+    margin: auto 0;
+    .nav-name{
+      margin-left: 1rem;
+    }
+  }
+
+  svg{
+    width: 1.5rem;
+    height: auto;
+    fill: var(--ibms-primary-text);
+  }
+
+  .navbar-nav{
+    margin-left: 1rem;
+    .nav-item .nav-link {
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    .dropdown-menu{
+      border: var(--ibms-primary-text) 1px solid;
+      // border-radius: 0;
+    }
+  }
+
+}
+
+@media (min-width: 992px) {
+  #sideNav {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: variables.$sidebar-base-width;
+    height: 100vh;
+
+    .navbar-brand {
+      margin: auto auto 0;
+      padding: 0.5rem;
+
+      .img-profile {
+        max-width: 10rem;
+        max-height: 10rem;
+        border: 0.5rem solid fade-out(variables.$white, 0.8);
+      }
+    }
+    .navbar-collapse {
+      display: flex;
+      align-items: flex-start;
+      flex-grow: 0;
+      width: 100%;
+      height: 50%;
+      
+
+      .navbar-nav {
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+
+        .nav-item {
+          display: block;
+          
+          .nav-link {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+
+.navbar .dropdown-menu {
+  max-height: 300px; /* Adjust this value based on your needs */
+  overflow-y: auto; /* This makes the dropdown scrollable when the content exceeds the max-height */
+}

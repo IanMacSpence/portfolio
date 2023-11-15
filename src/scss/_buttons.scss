@@ -1,0 +1,17 @@
+.btn-ibms-primary {
+  --bs-btn-color: var(--ibms-primary-text);
+  --bs-btn-bg: var(--ibms-primary-color);
+  --bs-btn-border-color: var(--ibms-primary-color);
+  --bs-btn-hover-color: var(--ibms-primary-text);
+  --bs-btn-hover-bg: var(--ibms-primary-color-dark);
+  --bs-btn-hover-border-color: var(--ibms-primary-color-dark);
+  --bs-btn-focus-shadow-rgb: var(--ibms-primary-color-rgb);
+  --bs-btn-active-color: var(--ibms-primary-text);
+  --bs-btn-active-bg: var(--ibms-primary-color-darker);
+  --bs-btn-active-border-color: var(--ibms-primary-color-darker);
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: var(--ibms-primary-color-lighter);
+  --bs-btn-disabled-border-color: var(--ibms-primary-color-lighter);
+}
+

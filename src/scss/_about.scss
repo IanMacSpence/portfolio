@@ -1,0 +1,26 @@
+@use 'variables';
+
+h1{
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  #about .about-content{
+    text-align: justify;
+  }
+}
+
+.contact {
+  width: 100px;
+}
+
+svg {
+  fill: variables.$gray-600;
+  vertical-align: baseline;
+}
+
+/*
+  TODO: perhaps make the above more applicable to the body and other sections
+*/
+
+

@@ -1,0 +1,37 @@
+@import '../../node_modules/animate.css/animate.css';
+
+#skills{
+  
+  .skill-container {
+    justify-content: flex-start;
+
+    .skill-item {
+      border: none;
+      padding: 0;
+      text-align: center; 
+      margin: 1rem 0.5rem;
+      width: 5rem;
+      // transition: transform 0.3s ease-in-out;
+      
+      .skill-icon {
+        width: 3rem;  
+        height: auto; 
+        margin: 0.25rem auto; 
+        
+      }
+
+      figcaption {
+        font-size: 0.75rem;
+      }
+    }
+
+    
+  .skill-item:hover {
+    animation: shakeY 1.5s ease-in-out infinite forwards;
+    
+  }
+  }
+  
+  
+}
+
