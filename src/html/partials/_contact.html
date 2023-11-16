@@ -40,7 +40,7 @@
         >
           <!-- NAME -->
 
-          <div class="mb-3">
+          <div class="form-floating mb-3">
             <input
               type="text"
               class="form-control"
@@ -49,21 +49,22 @@
               placeholder="Name*"
               required
             />
+            <label for="name">Name*</label>
+
             <div class="invalid-feedback">Please enter your name.</div>
-            <!-- handle errors with classes? -->
           </div>
           <!-- EMAIL -->
 
-          <div class="mb-3">
+          <div class="form-floating mb-3">
             <input
               type="email"
               class="form-control"
               name="email"
               id="email"
-              placeholder="Email*"
+              placeholder="name@example.com"
               required
             />
-
+            <label for="email">Email address*</label>
             <div class="invalid-feedback">
               <!-- handle errors with classes? -->
               Please enter a valid email address.
@@ -72,7 +73,7 @@
 
           <!-- SUBJECT -->
 
-          <div class="mb-3">
+          <div class="form-floating mb-3">
             <input
               type="text"
               class="form-control"
@@ -80,11 +81,12 @@
               id="subject"
               placeholder="Subject"
             />
+            <label for="subject">Subject</label>
           </div>
 
           <!-- MESSAGE -->
 
-          <div class="mb-3">
+          <div class="form-floating mb-3">
             <textarea
               name="message"
               class="form-control"
@@ -94,10 +96,11 @@
               placeholder="Message*"
               required
             ></textarea>
-
+            <label for="message">Message*</label>
             <div class="invalid-feedback">Please enter a message.</div>
             <!-- handle errors with classes? -->
           </div>
+
 
           <!-- BUTTON -->
 
@@ -191,3 +194,17 @@
     </div>
   </div>
 </section>
+
+
+<!-- 
+  netlify cli
+  fix background of floating label
+  fix size of textarea with floating label
+  bootstrap validation + js
+  thank you modal
+  email form to user
+  form submission notifications
+  accessibility
+  privacy policy
+
+ -->
