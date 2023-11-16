@@ -47,4 +47,14 @@
       vertical-align: baseline;
     }
   }
+  #thankYouModal {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    z-index: 1000;
+}
+
 }
