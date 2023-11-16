@@ -17,21 +17,29 @@
     box-shadow: -4px 4px 6px 0 rgba(0, 0, 0, 0.3);
     background-color: var(--ibms-primary-color-lighter); 
     input, textarea{
-      background-color: rgba(255, 255, 255, 0.55);
+      // background-color: rgba(255, 255, 255, 0.55);
+      background-color: rgb(179, 205, 228);
       color: rgb(33, 37, 41)
     }
+
+    input.form-control:-internal-autofill-selected {
+      background-color: rgb(179, 205, 228) !important;
+  }
+  
     textarea {
       resize: none;
     }
 
-    label::after {
-      background-color: rgba(255, 255, 255, 0.55);
+    label {
+      background-color: transparent;
+      &::after {
+        background-color: transparent;
+      }
     }
   }
   .contact-link, a{
     color: var(--ibms-primary-text);
     
-
     svg {
       fill: var(--ibms-primary-text);
       width: 1.25rem;
