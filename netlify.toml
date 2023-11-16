@@ -1,0 +1,11 @@
+# Global settings for the whole site
+[build]
+  command = "gulp build" 
+  publish = "dist"       
+
+# Local development settings
+[dev]
+  command = "gulp watch" # Command to start your local dev environment
+  port = 3000            # The port your local dev server (BrowserSync) runs on
+  targetPort = 8888      # The port Netlify Dev will use as a proxy
+  publish = "dist"       # Directory to serve files from in local development

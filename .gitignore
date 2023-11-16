@@ -1,8 +1,17 @@
+# Dependencies
 node_modules/
+
+# Build output
 dist/
+
+# Personal tasks
 tasks.todo
+
+# System files
 .DS_Store
+
+# Environment variables
 .env
 
-# Local Netlify folder
+# Netlify local folder
 .netlify
