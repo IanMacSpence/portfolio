@@ -50,8 +50,6 @@
               required
             />
             <label for="name">Name*</label>
-
-            <div class="invalid-feedback">Please enter your name.</div>
           </div>
           <!-- EMAIL -->
 
@@ -65,10 +63,6 @@
               required
             />
             <label for="email">Email address*</label>
-            <div class="invalid-feedback">
-              <!-- handle errors with classes? -->
-              Please enter a valid email address.
-            </div>
           </div>
 
           <!-- SUBJECT -->
@@ -97,7 +91,7 @@
               required
             ></textarea>
             <label for="message">Message*</label>
-            <div class="invalid-feedback">Please enter a message.</div>
+
             <!-- handle errors with classes? -->
           </div>
 
@@ -192,10 +186,14 @@
       </div>
     </div>
   </div>
+  <div id="thankYouModal" style="display: none">
+    Thank you for your submission!
+    <!-- Modal content -->
+  </div>
 </section>
 
 <!-- 
-  fix background of floating label
+
   fix size of textarea with floating label
   bootstrap validation + js
   thank you modal
