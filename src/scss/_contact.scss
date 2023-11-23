@@ -3,14 +3,26 @@
 #contact{
   .contact-info {
     color: variables.$gray-600;
-    font-size: 1.25rem;
+    font-size: 1.075rem;
     padding-right: 5rem;
     padding-top: 5rem;
-    text-align: justify;
+ 
      
     a {
       color: variables.$gray-600;
     }
+
+    .contact-links-test svg {
+      fill: variables.$gray-600;
+      width: 1.25rem;
+      height: auto;
+      vertical-align: baseline;
+    }
+
+    .contact-links-test .contact-link-text {
+      color: variables.$gray-600;
+    }
+
   }
   .contact-form {
     padding: 5rem 3rem;
@@ -28,6 +40,7 @@
   
     textarea {
       resize: none;
+      height: 20vh;
     }
 
     label {
@@ -47,14 +60,6 @@
       vertical-align: baseline;
     }
   }
-  #thankYouModal {
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    padding: 20px;
-    z-index: 1000;
-}
+  
 
 }

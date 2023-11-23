@@ -70,8 +70,15 @@ document.getElementById('contactForm').addEventListener('submit', function(event
       body: new URLSearchParams(formData).toString()
   })
   .then(() => {
-      document.getElementById('thankYouModal').style.display = 'block';
+    var modal = new bootstrap.Modal(document.getElementById('thankYouModal'));
+    modal.show();
+
       // You can also use JavaScript to add more complex modal behavior
+      console.log("display modal")
   })
   .catch((error) => console.error('Error:', error));
 });
+
+
+
+
