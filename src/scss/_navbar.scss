@@ -3,7 +3,7 @@
 #sideNav {
   text-transform: uppercase;
   color: var(--ibms-primary-text);
-  a {
+  a, button {
     color: var(--ibms-primary-text);
   }
 
@@ -22,7 +22,7 @@
 
   .navbar-nav{
     margin-left: 1rem;
-    .nav-item .nav-link {
+    .nav-item .nav-link, button {
       font-weight: 600;
       text-transform: uppercase;
     }
@@ -31,7 +31,18 @@
       // border-radius: 0;
     }
   }
-
+  .dropdown-item {
+    color: var(--ibms-primary-text);
+    background: var(--ibms-primary-color);
+    &:hover{
+      color: var(--ibms-primary-text);
+      background: var(--ibms-primary-color-dark);
+    }
+    &:active{
+      color: var(--ibms-primary-text);
+      background: var(--ibms-primary-color-darker);
+    }
+  }
 }
 
 @media (min-width: 992px) {

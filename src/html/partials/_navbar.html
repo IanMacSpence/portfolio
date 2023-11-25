@@ -42,8 +42,55 @@
       <li class="nav-item">
         <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
       </li>
-
-      <li class="nav-item btn-group dropend">
+      <!-- @bm! Home-->
+      <li class="nav-item">
+        <button
+          class="btn btn-toggle d-inline-flex align-items-center border-0 collapsed"
+          data-bs-toggle="collapse"
+          data-bs-target="#theme-collapse"
+          aria-expanded="false"
+        >
+          Themes
+        </button>
+        <div class="collapse" id="theme-collapse" style="">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li>
+              <button
+                class="dropdown-item btn btn-ibms-primary theme-hookers-green"
+                onclick="switchTheme('theme-hookers-green')"
+              >
+                Hooker's Green
+              </button>
+            </li>
+            <li>
+              <button
+                class="dropdown-item btn btn-ibms-primary theme-french-blue"
+                onclick="switchTheme('theme-french-blue')"
+              >
+                French Blue
+              </button>
+            </li>
+            <li>
+              <button
+                class="dropdown-item btn btn-ibms-primary theme-red"
+                onclick="switchTheme('theme-red')"
+              >
+                Red
+              </button>
+            </li>
+            <li>
+              <button
+                class="dropdown-item btn btn-ibms-primary theme-orange"
+                onclick="switchTheme('theme-orange')"
+              >
+                Orange
+              </button>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <!-- @bm! Themes-->
+      <!-- <li class="nav-item btn-group dropend">
         <a
           class="nav-link dropdown-toggle"
           href="#"
@@ -56,46 +103,6 @@
         <ul class="dropdown-menu">
           <li>
             <button
-              class="dropdown-item .dropdown-ibms btn-ibms-primary theme-french-blue"
-              onclick="switchTheme('theme-french-blue')"
-            >
-              French Blue
-            </button>
-          </li>
-          <li>
-            <button
-              class="dropdown-item btn btn-ibms-primary theme-cornflower-blue"
-              onclick="switchTheme('theme-cornflower-blue')"
-            >
-              Cornflower Blue
-            </button>
-          </li>
-          <li>
-            <button
-              class="dropdown-item btn btn-ibms-primary theme-metallic-seaweed"
-              onclick="switchTheme('theme-metallic-seaweed')"
-            >
-              Metallic Seaweed
-            </button>
-          </li>
-          <li>
-            <button
-              class="dropdown-item btn btn-ibms-primary theme-teal2"
-              onclick="switchTheme('theme-teal2')"
-            >
-              Teal
-            </button>
-          </li>
-          <li>
-            <button
-              class="dropdown-item btn btn-ibms-primary theme-cerulean"
-              onclick="switchTheme('theme-cerulean')"
-            >
-              Cerulean
-            </button>
-          </li>
-          <li>
-            <button
               class="dropdown-item btn btn-ibms-primary theme-hookers-green"
               onclick="switchTheme('theme-hookers-green')"
             >
@@ -104,30 +111,31 @@
           </li>
           <li>
             <button
-              class="dropdown-item btn btn-ibms-primary theme-bottle-green"
-              onclick="switchTheme('theme-bottle-green')"
+              class="dropdown-item btn btn-ibms-primary theme-french-blue"
+              onclick="switchTheme('theme-french-blue')"
             >
-              Bottle Green
+              French Blue
+            </button>
+          </li>
+
+          <li>
+            <button
+              class="dropdown-item btn btn-ibms-primary theme-red"
+              onclick="switchTheme('theme-red')"
+            >
+              Red
             </button>
           </li>
           <li>
             <button
-              class="dropdown-item btn btn-ibms-primary theme-forest-green"
-              onclick="switchTheme('theme-forest-green')"
+              class="dropdown-item btn btn-ibms-primary theme-orange"
+              onclick="switchTheme('theme-orange')"
             >
-              Forest Green
-            </button>
-          </li>
-          <li>
-            <button
-              class="dropdown-item btn btn-ibms-primary theme-myrtle-green"
-              onclick="switchTheme('theme-myrtle-green')"
-            >
-              Myrtle Green
+              Orange
             </button>
           </li>
         </ul>
-      </li>
+      </li> -->
     </ul>
     <div class="nav-footer w-100">
       <hr style="color: aliceblue; width: 100%" />

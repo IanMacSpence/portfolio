@@ -20,7 +20,9 @@ $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
 $pink:    #e83e8c !default;
 $red:     #dc3545 !default;
+$red-rgb: rgb(220, 53, 69);
 $orange:  #BD5D38 !default;
+$orange-rgb: rgb(189, 93, 56);
 $yellow:  #ffc107 !default;
 $green:   #28a745 !default;
 $teal:    #20c997 !default;
@@ -28,26 +30,13 @@ $cyan:    #17a2b8 !default;
 
 $french-blue: #3E7CB1;
 $french-blue-rgb: rgb(61, 122, 176);
-$cornflower-blue: #7BAFD4;
-$cornflower-blue-rgb: rgb(123, 175, 212);
-$metallic-seaweed: #367588;
-$metallic-seaweed-rgb: rgb(54, 117, 136);
-$teal2: #008080;
-$teal2-rgb: rgb(0, 128, 128);
-$cerulean: #007BA7;
-$cerulean-rgb: rgb(0, 123, 167);
 $hookers-green: #49796B;
 $hookers-green-rgb: rgb(73, 121, 107);
-$bottle-green: #006A4E;
-$bottle-green-rgb: rgb(0, 106, 78);
-$forest-green: #228B22;
-$forest-green-rgb: rgb(34, 139, 34);
-$myrtle-green: #317873;
-$myrtle-green-rgb: rgb(49, 120, 115);
 
 
-$primary:       $french-blue !default;
-$primary-rgb:   $french-blue-rgb !default;
+
+$primary:       $hookers-green !default;
+$primary-rgb:   $hookers-green-rgb !default;
 $secondary:     $gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
@@ -85,6 +74,18 @@ $primary-custom-text-hover-color: rgba(255, 255, 255, 0.75);
   --ibms-dropdown-text-color: var(--ibms-primary-text)
 }
 
+.theme-hookers-green {
+  --ibms-primary-color: #{$hookers-green};
+  --ibms-primary-color-rgb: #{$hookers-green-rgb};
+  --ibms-primary-color-dark: #{color.scale($hookers-green, $lightness: -7.5%)};
+  --ibms-primary-color-darker: #{color.scale($hookers-green, $lightness: -15%)};
+  --ibms-primary-color-light: #{color.scale($hookers-green, $lightness: 7.5%)};
+  --ibms-primary-color-lighter: #{color.scale($hookers-green, $lightness: 15%)};
+  --ibms-primary-text: rgba(255, 255, 255, 0.55);
+  --ibms-btn-bg: #{$hookers-green};
+  --ibms-btn-border-color: #{$hookers-green};
+}
+
 .theme-french-blue {
   --ibms-primary-color: #{$french-blue}; 
   --ibms-primary-color-rgb: #{$french-blue-rgb};
@@ -99,99 +100,26 @@ $primary-custom-text-hover-color: rgba(255, 255, 255, 0.75);
   --bs-dropdown-bg: var(--ibms-primary-color);
 }
 
-
-.theme-cornflower-blue {
-  --ibms-primary-color: #{$cornflower-blue};
-  --ibms-primary-color-rgb: #{$cornflower-blue-rgb};
-  --ibms-primary-color-dark: #{color.scale($cornflower-blue, $lightness: -7.5%)};
-  --ibms-primary-color-darker: #{color.scale($cornflower-blue, $lightness: -15%)};
-  --ibms-primary-color-light: #{color.scale($cornflower-blue, $lightness: 7.5%)};
-  --ibms-primary-color-lighter: #{color.scale($cornflower-blue, $lightness: 15%)};
+.theme-orange {
+  --ibms-primary-color: #{$orange};
+  --ibms-primary-color-rgb: #{$orange-rgb};
+  --ibms-primary-color-dark: #{color.scale($orange, $lightness: -7.5%)};
+  --ibms-primary-color-darker: #{color.scale($orange, $lightness: -15%)};
+  --ibms-primary-color-light: #{color.scale($orange, $lightness: 7.5%)};
+  --ibms-primary-color-lighter: #{color.scale($orange, $lightness: 15%)};
   --ibms-primary-text: rgba(255, 255, 255, 0.55);
-  --ibms-btn-bg: #{$cornflower-blue};
-  --ibms-btn-border-color: #{$cornflower-blue};
+  --ibms-btn-bg: #{$orange};
+  --ibms-btn-border-color: #{$orange};
 }
 
-.theme-metallic-seaweed {
-  --ibms-primary-color: #{$metallic-seaweed};
-  --ibms-primary-color-rgb: #{$metallic-seaweed-rgb};
-  --ibms-primary-color-dark: #{color.scale($metallic-seaweed, $lightness: -7.5%)};
-  --ibms-primary-color-darker: #{color.scale($metallic-seaweed, $lightness: -15%)};
-  --ibms-primary-color-light: #{color.scale($metallic-seaweed, $lightness: 7.5%)};
-  --ibms-primary-color-lighter: #{color.scale($metallic-seaweed, $lightness: 15%)};
+.theme-red {
+  --ibms-primary-color: #{$red};
+  --ibms-primary-color-rgb: #{$red-rgb};
+  --ibms-primary-color-dark: #{color.scale($red, $lightness: -7.5%)};
+  --ibms-primary-color-darker: #{color.scale($red, $lightness: -15%)};
+  --ibms-primary-color-light: #{color.scale($red, $lightness: 7.5%)};
+  --ibms-primary-color-lighter: #{color.scale($red, $lightness: 15%)};
   --ibms-primary-text: rgba(255, 255, 255, 0.55);
-  --ibms-btn-bg: #{$metallic-seaweed};
-  --ibms-btn-border-color: #{$metallic-seaweed};
-}
-
-.theme-teal2 {
-  --ibms-primary-color: #{$teal2};
-  --ibms-primary-color-rgb: #{$teal2-rgb};
-  --ibms-primary-color-dark: #{color.scale($teal2, $lightness: -7.5%)};
-  --ibms-primary-color-darker: #{color.scale($teal2, $lightness: -15%)};
-  --ibms-primary-color-light: #{color.scale($teal2, $lightness: 7.5%)};
-  --ibms-primary-color-lighter: #{color.scale($teal2, $lightness: 15%)};
-  --ibms-primary-text: rgba(255, 255, 255, 0.55);
-  --ibms-btn-bg: #{$teal2};
-  --ibms-btn-border-color: #{$teal2};
-}
-
-.theme-cerulean {
-  --ibms-primary-color: #{$cerulean};
-  --ibms-primary-color-rgb: #{$cerulean-rgb};
-  --ibms-primary-color-dark: #{color.scale($cerulean, $lightness: -7.5%)};
-  --ibms-primary-color-darker: #{color.scale($cerulean, $lightness: -15%)};
-  --ibms-primary-color-light: #{color.scale($cerulean, $lightness: 7.5%)};
-  --ibms-primary-color-lighter: #{color.scale($cerulean, $lightness: 15%)};
-  --ibms-primary-text: rgba(255, 255, 255, 0.55);
-  --ibms-btn-bg: #{$cerulean};
-  --ibms-btn-border-color: #{$cerulean};
-}
-
-.theme-hookers-green {
-  --ibms-primary-color: #{$hookers-green};
-  --ibms-primary-color-rgb: #{$hookers-green-rgb};
-  --ibms-primary-color-dark: #{color.scale($hookers-green, $lightness: -7.5%)};
-  --ibms-primary-color-darker: #{color.scale($hookers-green, $lightness: -15%)};
-  --ibms-primary-color-light: #{color.scale($hookers-green, $lightness: 7.5%)};
-  --ibms-primary-color-lighter: #{color.scale($hookers-green, $lightness: 15%)};
-  --ibms-primary-text: rgba(255, 255, 255, 0.55);
-  --ibms-btn-bg: #{$hookers-green};
-  --ibms-btn-border-color: #{$hookers-green};
-}
-
-.theme-bottle-green {
-  --ibms-primary-color: #{$bottle-green};
-  --ibms-primary-color-rgb: #{$bottle-green-rgb};
-  --ibms-primary-color-dark: #{color.scale($bottle-green, $lightness: -7.5%)};
-  --ibms-primary-color-darker: #{color.scale($bottle-green, $lightness: -15%)};
-  --ibms-primary-color-light: #{color.scale($bottle-green, $lightness: 7.5%)};
-  --ibms-primary-color-lighter: #{color.scale($bottle-green, $lightness: 15%)};
-  --ibms-primary-text: rgba(255, 255, 255, 0.55);
-  --ibms-btn-bg: #{$bottle-green};
-  --ibms-btn-border-color: #{$bottle-green};
-}
-
-.theme-forest-green {
-  --ibms-primary-color: #{$forest-green};
-  --ibms-primary-color-rgb: #{$forest-green-rgb};
-  --ibms-primary-color-dark: #{color.scale($forest-green, $lightness: -7.5%)};
-  --ibms-primary-color-darker: #{color.scale($forest-green, $lightness: -15%)};
-  --ibms-primary-color-light: #{color.scale($forest-green, $lightness: 7.5%)};
-  --ibms-primary-color-lighter: #{color.scale($forest-green, $lightness: 15%)};
-  --ibms-primary-text: rgba(255, 255, 255, 0.55);
-  --ibms-btn-bg: #{$forest-green};
-  --ibms-btn-border-color: #{$forest-green};
-}
-
-.theme-myrtle-green {
-  --ibms-primary-color: #{$myrtle-green};
-  --ibms-primary-color-rgb: #{$myrtle-green-rgb};
-  --ibms-primary-color-dark: #{color.scale($myrtle-green, $lightness: -7.5%)};
-  --ibms-primary-color-darker: #{color.scale($myrtle-green, $lightness: -15%)};
-  --ibms-primary-color-light: #{color.scale($myrtle-green, $lightness: 7.5%)};
-  --ibms-primary-color-lighter: #{color.scale($myrtle-green, $lightness: 15%)};
-  --ibms-primary-text: rgba(255, 255, 255, 0.55);
-  --ibms-btn-bg: #{$myrtle-green};
-  --ibms-btn-border-color: #{$myrtle-green};
+  --ibms-btn-bg: #{$red};
+  --ibms-btn-border-color: #{$red};
 }

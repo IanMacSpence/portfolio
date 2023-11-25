@@ -1,3 +1,16 @@
 #thankYouModal {
+  .modal-header{
+    .modal-title{
+      color: var(--ibms-primary-text);
+      font-weight: 400;
+    }
+  }
 
+  .modal-footer {
+    border: none;
+    button {
+      text-transform: capitalize !important;
+      background-color: var(--ibms-primary-color-lighter);
+    }
+  }
 }
