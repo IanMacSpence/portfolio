@@ -2,20 +2,10 @@
 //default, all screen sizes
 section.resume-section { // the different sections of the resume like about, experience etc
   border-bottom: 1px solid variables.$gray-300; //creates a border at the bottom of a resume section
-  // padding-top: 5rem !important; 
-  // padding-bottom: 5rem !important;
+  padding-top: 5rem !important; 
+  padding-bottom: 5rem !important;
   position: relative;
-}
-@media (min-width: 768px) {
-  section.resume-section {
-    min-height: 100vh;
-  }
-}
-@media (min-width: 992px) {
-  section.resume-section {
-    // padding-top: 3rem !important;
-    // padding-bottom: 3rem !important;
-  }
+  min-height: 100vh;
 }
 
 @media (min-width: 1200px) {

@@ -4,10 +4,6 @@
   .contact-info {
     color: variables.$gray-600;
     font-size: 1.075rem;
-    padding-right: 5rem;
-    padding-top: 5rem;
- 
-     
     a {
       color: variables.$gray-600;
     }
@@ -63,3 +59,12 @@
   
 
 }
+
+@media (min-width: 992px) {
+  .contact-info {
+
+    padding-right: 5rem;
+    padding-top: 5rem;
+  } 
+}
+
