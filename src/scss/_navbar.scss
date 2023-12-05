@@ -26,10 +26,10 @@
       font-weight: 600;
       text-transform: uppercase;
     }
-    .dropdown-menu{
-      border: var(--ibms-primary-text) 1px solid;
-      // border-radius: 0;
+    a.active{
+      color: #fff;
     }
+
   }
   .dropdown-item {
     color: var(--ibms-primary-text);
@@ -81,7 +81,6 @@
 
         .nav-item {
           display: block;
-          
           .nav-link {
             display: block;
           }
