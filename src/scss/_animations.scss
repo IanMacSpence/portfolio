@@ -1,0 +1,90 @@
+/* ANIMATIONS */
+
+/* Initial load: About, profile pic, nav-links, nav-footer*/
+.about-section-content.animate.sectionFadeIn, 
+.img-profile.animate.fadeIn, 
+.nav-item.animate.fadeIn,
+.nav-footer.animate.fadeIn{
+  opacity: 0;
+  transform: translateY(2em);
+}
+
+.about-section-content.animate.sectionFadeIn.animationCompleted,
+.img-profile.animate.fadeIn.animationCompleted,
+.nav-item.animate.fadeIn.animationCompleted,
+.nav-footer.animate.fadeIn.animationCompleted {
+  opacity: 1;
+  transform: translateY(0) translateX(0);
+}
+
+
+/* Section fade in */
+.section-content.animate.sectionFadeIn {
+  opacity: 0;
+  transform: translateY(2em);
+}
+
+.section-content.animate.sectionFadeIn.animationCompleted {
+  opacity: 1;
+  transform: translateY(0) translateX(0);
+}
+
+/* Skills */
+// fade in to the right staggered
+.skill-item.animate.skillFadeIn {
+  opacity: 0;
+  transform: translateX(-0.5em);
+  transition-delay: var(--animation-delay, 0s); // staggered delay, set in animation.js
+}
+
+.skill-item.animate.skillFadeIn.animationCompleted {
+  opacity: 1;
+  transform: translateY(0) translateX(0);
+  
+}
+
+/* Project cards*/
+// Mobile: 
+.project-body.animate.projectTextFadeIn {
+  opacity: 0;  
+  transform: translateY(0.75em); 
+}
+.project-body.animate.projectTextFadeIn.animationCompleted {
+  opacity: 1;  
+  transform: translateY(0) translateX(0);
+}
+// Desktop: unblur image and text fade right
+@media screen and (min-width: 768px) { 
+  .project-body.animate.projectTextFadeIn {
+    opacity: 0;  
+    transform: translateX(-0.5em); 
+  }
+}
+
+/* Blur/unblur */
+.project-image-container {
+  position: relative;
+}
+
+.project-image-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(49, 36, 80, 0.5); /* Dark overlay */
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+
+.project-image-container.animationCompleted::before {
+  opacity: 0;
+}
+
+/* UTILITY CLASSES */
+.animate {
+  transition: all 1s ease-out;
+}
+
+
