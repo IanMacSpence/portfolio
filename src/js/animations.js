@@ -69,6 +69,9 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // Create the IntersectionObserver
+  const observer10 = new IntersectionObserver(handleIntersect, {
+    threshold: 0.1,
+  });
   const observer20 = new IntersectionObserver(handleIntersect, {
     threshold: 0.2,
   });
@@ -88,15 +91,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Section Fade Ups: 20% threshold
   document
-    .querySelectorAll(".skills-section-content, .project-section-content, .contact-section-content")
-    .forEach((el) => observer20.observe(el));
+    .querySelectorAll(
+      ".skills-section-content, .project-section-content, .contact-section-content"
+    )
+    .forEach((el) => observer10.observe(el));
 
-  // Project cards
-  
+  // Project card image
   document
-    .querySelectorAll(".project-body, .project-image-container")
+    .querySelectorAll(".project-image-container")
+    .forEach((el) => observer80.observe(el));
+
+  // Project card text
+  document
+    .querySelectorAll(".project-body")
     .forEach((el) => observer50.observe(el));
 
+  // Trigger skill-item animations
   const skillsSection = document.querySelector("#skills");
   if (skillsSection) {
     skillObserver.observe(skillsSection);
