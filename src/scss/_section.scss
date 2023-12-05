@@ -1,5 +1,9 @@
 @use 'variables';
 //default, all screen sizes
+html {
+  scroll-behavior: smooth;
+}
+
 section.resume-section { // the different sections of the resume like about, experience etc
   border-bottom: 1px solid variables.$gray-300; //creates a border at the bottom of a resume section
   padding-top: 5rem !important; 
